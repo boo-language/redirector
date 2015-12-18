@@ -1,0 +1,23 @@
+<VirtualHost *:443>
+  ServerName boo.codehaus.org
+  ServerAdmin support@codehaus.org
+  RewriteEngine on
+
+  Include ssl.d/WILDCARD.codehaus.org.conf
+
+  Include redirector/includes/abuse.inc
+
+  RedirectPermanent / http://www.boo-lang.org/
+
+</VirtualHost>
+
+<VirtualHost *:80>
+  ServerName boo.codehaus.org
+  ServerAdmin support@codehaus.org
+  RewriteEngine on
+
+  Include redirector/includes/abuse.inc
+
+  RedirectPermanent / http://www.boo-lang.org/
+
+</VirtualHost>
