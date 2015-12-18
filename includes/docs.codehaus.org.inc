@@ -157,6 +157,13 @@ RewriteRule "^/display/RVM/Wiki$"                              "http://www.jikes
 RewriteRule "^/display/RVM/(.*)$"                              "http://www.jikesrvm.org/UserGuide/" [R=301,L]
 
 ##################################
+# Boo language documentation   #
+##################################
+RewriteRule "^/display/BOO/$"                                  "https://github.com/bamboo/boo/wiki" [R=301,L]
+RewriteRule "^/display/BOO/Scripting%2Bwith%2Bthe%2BBoo.Lang.Interpreter%2BAPI$" "https://github.com/bamboo/boo/wiki/Scripting-with-the-Boo.Lang.Interpreter-API" [R=301,L]
+RewriteRule "^/display/BOO/(.*)$"                              "https://github.com/bamboo/boo/wiki" [R=301,L]
+
+##################################
 # FALLBACK                       #
 ##################################
 RewriteRule    "^.*"  "https://www.codehaus.org/termination/" [R=301,L]
